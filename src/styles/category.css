@@ -1,0 +1,19 @@
+.category_page{
+    width: 100%;
+    padding: 2.5rem 0;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: center;
+}
+
+.category_page .category_box{
+    background: #fff;
+    width: 800px;
+    border: 1px solid #ddd;
+    padding: 2.7rem 1.7rem;
+}
+
+.category_page input::placeholder{
+    opacity: 0.5;
+    font-size: 80%;
+}
