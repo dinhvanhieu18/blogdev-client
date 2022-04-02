@@ -1,10 +1,10 @@
-import React from 'react';
-import {IBlog, RootStore} from "../../utils/TypeScript";
-import {Link} from 'react-router-dom'
-import CardVert from "./CardVert";
-import {useSelector} from "react-redux";
-import {checkAuth} from "../../utils/checkAuth";
-import EditDelete from "../editor/EditDelete";
+import React from 'react'
+import { IBlog, RootStore } from '../../utils/TypeScript'
+import { Link } from 'react-router-dom'
+import CardVert from './CardVert'
+import { useSelector } from 'react-redux'
+import { checkAuth } from '../../utils/checkAuth'
+import EditDelete from '../editor/EditDelete'
 
 interface IProps {
     categories: IBlog[],

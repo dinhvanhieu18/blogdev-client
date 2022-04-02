@@ -4,10 +4,9 @@ import {ALERT, IAlertType} from '../types/alertType'
 import {
     CREATE_BLOG,
     DELETE_BLOG,
-    GET_BLOG, GET_BLOGS,
+    GET_BLOGS,
     ICreateBlogType,
     IDeleteBlogType, IGetBlogsType,
-    IGetBlogType,
     IUpdateBlogType,
     UPDATE_BLOG
 } from '../types/blogType'

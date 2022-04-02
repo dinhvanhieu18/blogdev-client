@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { IBlog, IParams, RootStore } from '../../utils/TypeScript'
 import { useParams, Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'

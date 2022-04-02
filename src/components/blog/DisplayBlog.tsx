@@ -1,8 +1,8 @@
-import React from 'react';
-import {IBlog, RootStore} from "../../utils/TypeScript";
-import {useSelector} from "react-redux";
-import {Link} from 'react-router-dom'
-import EditDelete from "../editor/EditDelete";
+import React from 'react'
+import { IBlog, RootStore } from '../../utils/TypeScript'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+import EditDelete from '../editor/EditDelete'
 
 interface IProps {
     blog: IBlog

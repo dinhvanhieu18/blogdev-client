@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
-import {IBlog, IParams, RootStore} from "../../utils/TypeScript";
-import {useDispatch, useSelector} from "react-redux";
+import {IBlog, IParams } from "../../utils/TypeScript";
+import { useDispatch } from "react-redux";
 import {ALERT} from "../../redux/types/alertType";
 import {getAPI} from "../../utils/FetchData";
 import {DELETE_BLOG, UPDATE_BLOG} from "../../redux/types/blogType";
@@ -14,7 +14,6 @@ const DetailBlog = () => {
 
     const [blog, setBlog] = useState<IBlog>()
 
-    const { alertReducer } = useSelector((state: RootStore) => state)
     const dispatch = useDispatch()
 
     const [notFound, setNotFound] = useState(false)
@@ -44,7 +43,7 @@ const DetailBlog = () => {
             })
 
         return () => setBlog(undefined)
-    }, [id])
+    }, [id, dispatch])
 
     return (
         <div className="my-4">

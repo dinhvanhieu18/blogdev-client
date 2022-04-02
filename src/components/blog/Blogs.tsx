@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import {useSelector} from "react-redux";
-import {IBlog, RootStore} from "../../utils/TypeScript";
-import {BlogType, CategoryType} from "../../utils/const";
-import BlogsWithSubCategory from "./BlogsWithSubCategory";
-import BlogsWithoutSubCategory from "./BlogsWithoutSubCategory";
+import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
+import { IBlog, RootStore } from '../../utils/TypeScript'
+import { BlogType, CategoryType } from '../../utils/const'
+import BlogsWithSubCategory from './BlogsWithSubCategory'
+import BlogsWithoutSubCategory from './BlogsWithoutSubCategory'
 
 interface IProps {
     category?: string

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import { useDispatch } from 'react-redux'
-import { ALERT } from "../../redux/types/alertType";
+import { ALERT } from '../../redux/types/alertType'
 
 interface IProps {
     title: string

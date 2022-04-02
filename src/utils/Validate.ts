@@ -2,7 +2,7 @@ import {IBlog, IUserRegister} from './TypeScript'
 import jwt_decode from 'jwt-decode'
 import { getAPI } from './FetchData'
 import { AUTH } from '../redux/types/authType'
-import {BlogType} from "./const";
+import {BlogType, MinContentLen} from "./const";
 
 export const validateRegister = (userRegister: IUserRegister) => {
     const { password, confirmPassword } = userRegister
@@ -47,8 +47,8 @@ export const validateCreateBlog = ({
 
     if (type === BlogType) {
         content = content.trim()
-        if (content.length < 500) {
-            errs.push("Content has at least 500 characters.")
+        if (content.length < MinContentLen) {
+            errs.push(`Content must has length is at least ${MinContentLen}.`)
         }
 
         if (!category) {

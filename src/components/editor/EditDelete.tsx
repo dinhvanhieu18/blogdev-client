@@ -1,10 +1,10 @@
-import React from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import {IBlog, RootStore} from "../../utils/TypeScript";
-import {checkAuth} from "../../utils/checkAuth";
-import {deleteBlog} from "../../redux/actions/blogAction";
-import {Admin} from "../../utils/const";
-import {Link} from "react-router-dom";
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { IBlog, RootStore } from '../../utils/TypeScript'
+import { checkAuth } from "../../utils/checkAuth";
+import { deleteBlog } from "../../redux/actions/blogAction";
+import { Admin } from "../../utils/const";
+import { Link } from "react-router-dom";
 
 interface IProps {
     blog: IBlog

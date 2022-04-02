@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react';
-import {useSelector} from "react-redux";
-import {IBlog, RootStore} from "../../utils/TypeScript";
-import CardVert from "./CardVert";
-import NoBlogs from "../common/NoBlogs";
+import React  from 'react'
+import { IBlog } from '../../utils/TypeScript'
+import CardVert from './CardVert'
+import NoBlogs from '../common/NoBlogs'
 
 interface IProps {
     blogs: IBlog[]
