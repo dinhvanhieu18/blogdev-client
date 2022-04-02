@@ -75,9 +75,9 @@ async (dispatch: Dispatch<IAuthType | IAlertType>) => {
     const accessToken = result ? result : token
 
     try {
-        localStorage.removeItem("logged")
-        dispatch({type: AUTH, payload: {}})
         await getAPI('auth/logout', accessToken)
+        dispatch({type: AUTH, payload: {}})
+        localStorage.removeItem("logged")
     } catch (err: any) {
         dispatch({type: ALERT, payload: {errors: err.response.data.msg}})
     }
