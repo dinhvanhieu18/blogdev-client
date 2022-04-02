@@ -10,7 +10,6 @@ const SocialLogin = () => {
         dispatch(googleLogin(idToken))
     }
 
-    console.log(`${process.env.REACT_APP_GOOGLE_CLIENT}`)
     return (
         <div className="mt-2 my-2">
             <GoogleLogin
