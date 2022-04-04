@@ -10,7 +10,7 @@ const Header = () => {
             className="navbar navbar-expand-lg navbar-light bg-light p-3"
             style={{position: 'sticky', top: 0, left: 0, zIndex: 9}}
         >
-            <Link className="navbar-brand" to="/">BlogDev</Link>
+            <Link className="navbar-brand" to="/">{`${process.env.REACT_APP_NAME}`}</Link>
 
             <button className={collapse ? "navbar-toggler collapsed" : "navbar-toggler"} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded={collapse ? "false": "true"} aria-label="Toggle navigation"
                 onClick={e => setCollapse(!collapse)}
